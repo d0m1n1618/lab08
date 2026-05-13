@@ -1,0 +1,4 @@
+model_path=/opt/airflow/models/production/production_model.pkl
+source_model=/opt/airflow/models/rf_model_20260513_180642.pkl
+accuracy=0.935672514619883
+promoted_at=20260513_180648

@@ -1,0 +1,21 @@
+[2026-05-13T17:57:47.379+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-13T17:57:47.410+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retrain_model_dag.compare_and_promote_model manual__2026-05-13T17:57:35.455141+00:00 [queued]>
+[2026-05-13T17:57:47.426+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retrain_model_dag.compare_and_promote_model manual__2026-05-13T17:57:35.455141+00:00 [queued]>
+[2026-05-13T17:57:47.426+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2026-05-13T17:57:47.462+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): compare_and_promote_model> on 2026-05-13 17:57:35.455141+00:00
+[2026-05-13T17:57:47.473+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'retrain_model_dag', 'compare_and_promote_model', 'manual__2026-05-13T17:57:35.455141+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/retrain_model_dag.py', '--cfg-path', '/tmp/tmpyyv265m0']
+[2026-05-13T17:57:47.476+0000] {standard_task_runner.py:105} INFO - Job 5: Subtask compare_and_promote_model
+[2026-05-13T17:57:47.477+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=249) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-13T17:57:47.478+0000] {standard_task_runner.py:72} INFO - Started process 267 to run task
+[2026-05-13T17:57:47.566+0000] {task_command.py:467} INFO - Running <TaskInstance: retrain_model_dag.compare_and_promote_model manual__2026-05-13T17:57:35.455141+00:00 [running]> on host 3fc78cea2d9d
+[2026-05-13T17:57:47.722+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='student' AIRFLOW_CTX_DAG_ID='retrain_model_dag' AIRFLOW_CTX_TASK_ID='compare_and_promote_model' AIRFLOW_CTX_EXECUTION_DATE='2026-05-13T17:57:35.455141+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-13T17:57:35.455141+00:00'
+[2026-05-13T17:57:47.723+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-05-13T17:57:47.768+0000] {logging_mixin.py:190} INFO - Old production accuracy: 0.935672514619883
+[2026-05-13T17:57:47.768+0000] {logging_mixin.py:190} INFO - New model accuracy: 0.935672514619883
+[2026-05-13T17:57:47.785+0000] {logging_mixin.py:190} INFO - New model promoted to production.
+[2026-05-13T17:57:47.812+0000] {python.py:240} INFO - Done. Returned value was: promoted
+[2026-05-13T17:57:47.846+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-05-13T17:57:47.847+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=retrain_model_dag, task_id=compare_and_promote_model, run_id=manual__2026-05-13T17:57:35.455141+00:00, execution_date=20260513T175735, start_date=20260513T175747, end_date=20260513T175747
+[2026-05-13T17:57:47.935+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-13T17:57:47.960+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-13T17:57:47.962+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

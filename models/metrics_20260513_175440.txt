@@ -1,0 +1,3 @@
+model_path=/opt/airflow/models/rf_model_20260513_175440.pkl
+accuracy=0.935672514619883
+timestamp=20260513_175440
