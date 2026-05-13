@@ -73,10 +73,6 @@ retrain_model
 compare_and_promote_model
 
 ## Zadania:
-
-retrain_model → compare_and_promote_model
-Zadanie retrain_model
-
 Pierwsze zadanie odpowiada za re-trenowanie modelu. W ramach tego kroku wykonywane są następujące operacje:
 
 Wczytanie danych z pliku:
